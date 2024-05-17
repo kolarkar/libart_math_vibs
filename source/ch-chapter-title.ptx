@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>Venn Diagrams</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> This chapter focuses on Venn Diagrams. What are they? How are they useful? We will use tactiles like dice, wikki-stix, and tactile graph paper to express concepts using Venn Diagrams. </p>
   </introduction>
 
   <!-- include sections -->
