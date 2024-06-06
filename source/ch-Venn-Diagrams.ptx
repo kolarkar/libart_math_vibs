@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Venn-Diagrams" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Venn Diagrams</title>
+
+  <introduction>
+    <p> This chapter focuses on Venn Diagrams. What are they? How are they useful? We will use tactiles like dice, wikki-stix, and tactile graph paper to express concepts using Venn Diagrams. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-section-name.ptx" />
+
+  <section xml:id="sec-set-th-notation">
+    <title>Some Notation for Set Theory</title>
+    
+    
+    <p>
+      <m>e^{i\pi}+1=0</m> Does this work? 
+    </p>
+
+<p>
+In this section we will be using Venn Diagrams to study Surveys, which is a topic in the area of math called Set Theory.  We need to know a few basic definitions and some notation for our studies.
+</p>
+
+<dl>
+  <li>
+    <title>Sets (or categories)</title>
+    <p>
+      are represented with capital letters. 
+In this example, A and B are the category names.
+The Universal Set is represented by the 
+rectangular boundary around the sets
+    </p>
+  </li>
+  <li>
+    <title>Elements</title>
+    <p>
+      in a set are sometimes named inside the set.
+In this example, Sally, Sam and Solomon are elements.
+    </p>
+  </li>
+  <li>
+    <title>Regions in a Venn Diagram</title>
+    <p>
+      in a Venn diagram are sometimes numbered 
+with Roman numerals, not to be confused as elements of the set.
+    </p>
+  </li>
+</dl>
+
+<p>
+  Sets (or categories) are represented with capital letters. 
+In this example, A and B are the category names.
+The Universal Set is represented by the 
+rectangular boundary around the sets
+</p>
+
+<figure xml:id="img-Venn-notation">
+  <caption>This image shows the notations used in Venn Diagrams.
+    
+  </caption>
+</figure>
+
+  </section>
+
+</chapter>

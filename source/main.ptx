@@ -12,8 +12,11 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-Venn-Diagrams.ptx" />
 
+    <xi:include href="./ch-Factorials" />
+
+    
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
