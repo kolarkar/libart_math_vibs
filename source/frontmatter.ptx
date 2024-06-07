@@ -6,12 +6,13 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>dr. ameya s. kolarkar</personname>
-      <department>math phys etc.</department>
-      <institution>No inst. necessary</institution>
+      <personname>Dr. Ameya S. Kolarkar</personname>
+      <department>Math and Physics</department>
+      <institution>Florida State Univeristy</institution>
     </author>
     <date>
-      <today />
+ <!--     <today /> -->
+      May 23, 2024
     </date>
   </titlepage>
 

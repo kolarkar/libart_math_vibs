@@ -26,7 +26,7 @@ In this section we will be using Venn Diagrams to study Surveys, which is a topi
   <li>
     <title>Sets (or categories)</title>
     <p>
-      are represented with capital letters. 
+      Sets (or categories) are represented with capital letters. 
 In this example, A and B are the category names.
 The Universal Set is represented by the 
 rectangular boundary around the sets
@@ -35,25 +35,55 @@ rectangular boundary around the sets
   <li>
     <title>Elements</title>
     <p>
-      in a set are sometimes named inside the set.
+      Elements in a set are sometimes named inside the set.
 In this example, Sally, Sam and Solomon are elements.
     </p>
   </li>
   <li>
     <title>Regions in a Venn Diagram</title>
     <p>
-      in a Venn diagram are sometimes numbered 
+      Regions in a Venn diagram are sometimes numbered 
 with Roman numerals, not to be confused as elements of the set.
     </p>
   </li>
+
+  <li>
+    <title>Cardinality</title>
+    <p>
+      The cardinality of set A, notated as <m>n(A)</m>, tells us the number of elements in the set. 
+In this example, <m>n(A) = 2</m>.
+    </p>
+  </li>
+
+  <li>
+    <title>Intersection</title>
+    <p>
+      <b>A and B</b> means the intersection, or overlap of sets A with B. The elements in A and B are the shared elements which are in both sets simultaneously.   In this example A and B is region II.
+
+    </p>
+  </li>
+
+  <li>
+    <title>Union</title>
+    <p>
+      <b>A or B</b> means the union of set A with B, which contains all the elements which are in A, all those in B (and those in both). In this example, A or B refers to three regions: I, I, and III.
+    </p>
+  </li>
+
+  <li>
+    <title>Complement</title>
+    <p>
+      The complement of A, notated A', means the region(s) in the diagram which are not in category A.
+      In this example, A' indicates regions III and IV, and <m>n(A')  = 3</m>. The elements of set A' are Solomon, Bob and Barb.
+    </p>
+  </li>
+
+
 </dl>
 
-<p>
-  Sets (or categories) are represented with capital letters. 
-In this example, A and B are the category names.
-The Universal Set is represented by the 
-rectangular boundary around the sets
-</p>
+
+
+
 
 <figure xml:id="img-Venn-notation">
   <caption>This image shows the notations used in Venn Diagrams.
@@ -62,5 +92,27 @@ rectangular boundary around the sets
 </figure>
 
   </section>
+
+
+  <section>
+    <title>Example</title>
+<p>Survey 2 Categories, Overlapping “or”<br/>
+    A survey of 64 informed people revealed the following information:<br />
+    45 believe that eggs are the superior fruit<br />
+    49 believe that apples are the best<br />
+    42 believe both of these things </p>
+</section>
+
+<reading-questions>
+    <p>1. How many believe eggs are superior or believe that apples are best? <br />
+    2. How many believe neither of these things?</p>
+
+<p>Solution - what's the html division here? block?</p>
+</reading-questions>
+
+<exercise>
+  xyzabc?
+</exercise>
+
 
 </chapter>
