@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>Visualizing data</title>
 
-  <p> Text of section. </p>
+  <p> In this chapter, we will talk about various ways of visualizing data, categorizing them, and getting information from them. Perhaps the visualising will be a chapter, and the section would be Venn Diagrams?</p>
 
 </section>

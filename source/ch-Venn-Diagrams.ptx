@@ -28,65 +28,39 @@ In this section we will be using Venn Diagrams to study Surveys, which is a topi
 
 <figure>
   <caption>Definitions of Venn Diagrams Notations</caption>
-  <image xml:id="venn-notations" width="80%">
+  <image xml:id="venn-notations-3" width="80%">
       <description>Venn Def</description>
       <latex-image>
-      \begin{tikzpicture}
-      \footnotesize
-      \node at (1,2) {Notations and Explanations};
-
-      \draw  (-2.5,-1.5)  rectangle (4.5,1.5);
+        \begin{tikzpicture}
+        \footnotesize
+        \node at (0,3.5) {Notations and Explanations};
   
-      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
-      \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
-      
-      \node at (-1,0) {\textbf{A}};
-      \node at (-1,0.3) {I};
-      \node at (-1,-0.3) {Sally};
-      \node at (1,0.3) {II};
-      \node at (1,-0.2) {Rhona};
-      \node at (3,0.3) {III};
-      \node at (3,0) {\textbf{B}};
-      \node at (3,-0.3) {Shinyu};
-      %\node at (-1,1.2) {Pat.${}=180$};
-      %\node at (3,1.2) {Env.${}=422$};
-      \node at (-2.3,-1.3) {$\emptyset$};
-      \end{tikzpicture}
-    </latex-image>
-</image>
-</figure>
-
-<figure>
-  <caption>Definitions of Venn Diagrams Notations - Style 2</caption>
-  <image xml:id="venn-notations-2" width="80%">
-      <description>Venn Def</description>
-      <latex-image>
-      \usetikzlibrary{positioning,fit,calc}
-       \begin{tikzpicture}
-      \footnotesize
-      \colorlet{circle edge}{blue!50}
-      \colorlet{circle area}{blue!20}
-      \tikzset{filled/.style={fill=circle area, thick,inner sep=0pt}, outline/.style={draw=circle edge, thick,inner sep=0pt}}
-      % The circles
-      \node (secondcircle) [circle,filled,text width=3cm] {};
-      \node (firstcircle) [circle,left=-1cm of secondcircle,outline,text width=3cm, fill=white] {};
-      \draw [outline] (secondcircle) circle (1.5cm);
-      % The labels
-      \node at ([xshift=-0.8cm]firstcircle.north) [anchor=south] {$\mathrm{Pat=422}$};
-      \node at ([xshift=0.8cm]secondcircle.north) [anchor=south] {$\mathrm{Env.=189}$};
-      \node at ($(firstcircle)!0.5!(secondcircle)$) {180};
-      \node at (firstcircle) {9};
-      \node at (secondcircle) {242};
-      % The rectangle and labels
-
-      \node (box) [fit=(firstcircle)(secondcircle), inner sep=1cm,draw, ultra thick,rounded corners] {};
-
-      \node [below=12pt of box.north] {$B-A$};
-      \node at (box.south west) [anchor=south west] {$\emptyset$};
-      \node at (box.south) [anchor=north] {431 total};
-      \node at (box.north east) [anchor=south west] {$H$};
-      \end{tikzpicture}
-      </latex-image>
+       \draw  (-4,-2.5)  rectangle (4,3);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!70,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!70,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{A}};
+        \node at (-1.5,0.3) {I};
+        \node at (-1.5,-0.3) {Sally};
+        \node at (0,0.3) {II};
+        \node at (0,-0.2) {Rhona};
+        \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{B}};
+        \node at (1.5,-0.3) {Shinyu};
+        \node at (3,2) {Zayna};
+        \node at (3,-2) {Jaylon};
+        \node at (-3,2) {IV};
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+        </latex-image>
   </image>
 </figure>
 
@@ -159,24 +133,324 @@ In this example, <m>n(A) = 2</m>.
 
 
   <section>
-    <title>Example</title>
-<p>Survey 2 Categories, Overlapping “or”<br/>
-    A survey of 64 informed people revealed the following information:<br />
-    45 believe that eggs are the superior fruit<br />
-    49 believe that apples are the best<br />
-    42 believe both of these things </p>
-</section>
+    <title>Example 1: Survey 2 Categories, Overlapping "or"</title>
 
-<reading-questions>
-    <p>1. How many believe eggs are superior or believe that apples are best? <br />
-    2. How many believe neither of these things?</p>
+  <p>  A survey of 64 informed people revealed the following information:
+    <ul>
+      <li>45 believe that eggs are the superior fruit</li>
+      <li>49 believe that apples are the best</li>
+      <li>42 believe both of these things</li>
+    </ul>
+  </p>
+
+<p>
+  Answer the following questions:
+</p>
+    <ol>
+      <li>How many believe eggs are superior or believe that apples are best?</li>
+      <li>How many believe neither of these things?</li>
+    </ol>
 
 <p>Solution - what's the html division here? block?</p>
-</reading-questions>
+
+<p>
+  To answer a question about cardinality of “Eggs or Apples”, we are looking for n(E or A). 
+
+The four regions on this two circle Venn diagram are labeled with roman numerals. 
+
+</p>
+
+<p>
+  First we will use a Venn diagram to organize the information.
+
+Let E represent the set of those who believe eggs are the superior fruit.  
+
+Let A represent the set of those who believe apples are best.  
+The universe (U) in this case is the set of 64 people who were surveyed. 
+
+</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-01" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+        \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+  %      \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+  %      \node at (1.5,-0.6) {7};
+  %      \node at (3,2) {12};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+        \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+  
+<p>
+The 42 who believe both will be in the football shaped intersection of E and A. We will label this region with it’s cardinality.
+In set notation we would say <m>n(E\text{ and }A) = 42</m>.</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-02" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+  %      \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+  %      \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+        \node at (1.5,-0.6) {7};
+  %      \node at (3,2) {12};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+  %      \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+  
+
+<p>
+  49 believe that apples are the best.
+This means n(A) = 49.
+We already labeled E and A to indicate n(E and A) = 42.
+Therefore, the right hand crescent shape of circle A will need to have
+7 elements, to make a total of 49 elements in circle A.
+</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-03" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+  %      \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+        \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+        \node at (1.5,-0.6) {7};
+  %      \node at (3,2) {12};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+  %      \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+  
+<p>
+  45 believe that eggs are the superior fruit.
+Since n(E and A) = 42 and n(E) = 45,
+We can deduce that the left hand crescent shape inside category E has 3 elements
+</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-04" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+  %      \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+        \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+        \node at (1.5,-0.6) {7};
+        \node at (3,2) {12};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+  %      \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+  
+
+<p>
+  Now that we have the cardinalities inside the categories labeled, we will label the portion of the diagram outside the circles.
+64 people were surveyed, so, <m> 64 - 3 - 42 - 7 = 12</m>. Therefore we label the portion outside the circles (Region IV) with 12.
+</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-05" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+        \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+        \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+        \node at (1.5,-0.6) {7};
+        \node at (3,2) {12};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+  %      \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+  
+<p>
+  Now our Venn Diagram is complete, and we are ready to answer any questions concerning this population.
+
+ How many believe eggs are the superior fruit or believe that apples are best? 
+This is asking for the cardinality of E or A, n(E or A).
+We will  include elements from any region in either E or A or both.
+The Venn diagram shows that the answer is <m>3 + 42 + 7 = 52</m>.
+</p>
+
+
+<p>
+  How many believe neither of these things?
+This is asking us for the cardinality outside of categories E and A.
+The Venn diagram shows that the answer is 12.
+</p>
+
+<figure>
+  <caption>Definitions of Venn Diagrams Notations</caption>
+  <image xml:id="venn-ex-egg-apple-sol-06" width="80%">
+      <description>Example: Survey | 2 categories | Overlapping ``or''</description>
+      <latex-image>
+        \begin{tikzpicture}
+        \footnotesize
+        \node at (0,2.7) {Example: Eggs, Apples};
+  
+       \draw  (-4,-2.2)  rectangle (4,2.5);
+  %	  \draw (0,0) rectangle (7,4);
+    
+  %      \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2cm and 1cm);
+     %   \draw[fill=red!70,fill opacity=0.5] (2,0) ellipse (2cm and 1cm);
+        
+      \draw[fill=blue!50,fill opacity=0.5] (-1.25,0) circle [radius=2cm];
+        \draw[fill=red!50,fill opacity=0.5] (1.25,0) circle [radius=2cm];
+  
+        \node at (-2,1) {\textbf{E}};
+  %      \node at (-1.5,0.3) {I};
+        \node at (-1.5,-0.6) {3};
+  %      \node at (0,0.3) {II};
+        \node at (0,-0.6) {42};
+  %      \node at (1.5,0.3) {III};
+        \node at (2,1) {\textbf{A}};
+        \node at (1.5,-0.6) {7};
+        \node at (3,2) {\underline{12}};
+  %      \node at (3,-2) {Jaylon};
+  %      \node at (-3,2) {IV};
+  %      \node at (-3.6,2.7) {64};	  
+  
+        %\node at (-1,1.2) {Pat.${}=180$};
+        %\node at (3,1.2) {Env.${}=422$};
+  %      \node at (-2.3,-1.3) {$\emptyset$};
+        \end{tikzpicture}
+      </latex-image>
+  </image>
+</figure>
+
+</section>
 
 <exercise>
   xyzabc?
 </exercise>
+
 
 
 </chapter>
