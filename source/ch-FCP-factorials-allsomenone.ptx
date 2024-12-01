@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-FCP-factorials-allsomenone" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>FCP, Factorials, All/Some/None</title>
+
+  <introduction>
+    <p> This chapter introduces the Fundamental Counting Principle. Then we do factorials!</p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-FCPintro.ptx" />
+
+ 
+
+</chapter>

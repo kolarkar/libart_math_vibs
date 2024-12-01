@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-fcp-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Fundamental Counting Principle</title>
+    
+
+<p>
+Below this, everything is copied from the converted slides to html. There WILL be errors!
+</p>
+
+
+<subsection xml:id="ssec-fcp-intro-act" xmlns:xi="http://www.w3.org/2001/XInclude"><title>Intro Activity:</title>
+
+<p>Let's take our play pieces like so: two pieces each with a different math symbol, 3 pieces each with a different Roman letter, and three pieces each with a different number. So we have eight different pieces in three different categories: symbols, letters, and numbers. How many different selections can we make if we choose one from each category?</p> 
+
+</subsection>
+
+<p>Barb is going to choose three accessories to go with her new outfit. </p>
+<p>She will choose one item from each of the following :</p>
+
+<p><b>(1) Shoes: </b></p>
+<p>Red Converse (RC); Blue Chacos (BC)</p>
+
+<p><b>(2) Neck Accessory: </b></p>
+<p>Floral Scarf (FS); Silver Chain (SC); Hemp Choker (HC)</p>
+
+<p><b>(3) Bag: </b></p>
+<p>Gold Coach Wristlet (GCW), Kate Spade Satchel (KSS); Boho Shoulder Bag (BSB)</p>
+
+<p>Here is one way of doing this. List out every possible selection she could make by choosing one item from each category. There are 18 different 3-category selections, as follows.</p>
+<table>
+  <tr>
+    <td>
+<p>1. RC-FS-GCW</p>
+<p>2. RC-FS-KSS </p>
+<p>3. RC-FS-BSB </p>
+<p>4. RC-SC-GSW</p>
+<p>5. RC-SC-KSS</p>
+<p>6. RC-SC-BSB</p>
+<p>7. RC-HC-GCW</p>
+<p>8. RC-HC-KSS</p>
+<p>9. RC-HC-BSB	</p>
+    </td>
+    <td>
+<p>10. BC-FS-GCW</p>
+<p>11. BC-FS-KSS </p>
+<p>12. BC-FS-BSB </p>
+<p>13. BC-SC-GSW</p>
+<p>14. BC-SC-KSS</p>
+<p>15. BC-SC-BSB</p>
+<p>16. BC-HC-GCW</p>
+<p>17. BC-HC-KSS</p>
+<p>18. BC-HC-BSB</p>
+    </td>
+  </tr>
+</table>
+
+</section>
