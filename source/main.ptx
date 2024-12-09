@@ -12,7 +12,12 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
+
+    <!-- Chapter: Visualizations -->
+
     <xi:include href="./ch-Venn-Diagrams.ptx" />
+
+    <!-- Chapter: Counting -->
 
     <xi:include href="./ch-FCP-factorials-allsomenone.ptx" />
 
