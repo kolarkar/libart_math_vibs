@@ -13,6 +13,16 @@
 
     <!-- Include chapters -->
 
+<!-- Unit I: Logic -->
+
+<!-- Chapter: Logic -->
+
+    <xi:include href="./ch-Logic_Symbols_and_Statements.ptx" />
+
+    <xi:include href="./ch-Arguments_and_Analyses.ptx" />
+
+
+
     <!-- Chapter: Visualizations -->
 
     <xi:include href="./ch-Venn-Diagrams.ptx" />

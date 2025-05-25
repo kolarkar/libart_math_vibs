@@ -1,4 +1,4 @@
-// This file was automatically generated with PreTeXt 2.17.1.
+// This file was automatically generated with PreTeXt 2.18.3.
 // If you modify this file, PreTeXt will no longer automatically update it.
 //
 //////////////////////////////////////////////////////////////
@@ -68,13 +68,17 @@
         "editor.quickSuggestions": {
           "other": "off"
         },
-        "editor.snippetSuggestions": "top",
-        "xml.validation.enabled": false,
+        "files.autoSave": "onFocusChange",
+        "editor.snippetSuggestions": "bottom",
+        "xml.validation.enabled": true,
+        "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server"
       },
       "extensions": [
         "oscarlevin.pretext-tools",
-        "CodeChat.codechat"
+        "CodeChat.codechat",
+        "streetsidesoftware.code-spell-checker",
+        "alpinebuster.vscode-latex-table-editor"
       ]
     }
   }

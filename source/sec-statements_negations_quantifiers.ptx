@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <section xml:id="sec-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+ 
+        <title>Notes on: Statements, Negations, and Quantifiers</title>
+        
+        <p>These notes cover the fundamental concepts of statements, negations, and quantified statements as introduced in our material.</p>
+        
+        <subsection>
+            <title>What is a Statement?</title>
+            <ul>
+                <li>A <term>statement</term> is defined as a <term>declarative sentence that has a truth value</term>. This means the sentence is either true or false, even if we don't know which one it is.</li>
+                <li><term>Examples of Statements:</term>
+                    <ul>
+                        <li>Today is Monday.</li>
+                        <li>The ground is wet.</li>
+                    </ul>
+                </li>
+                <li>The material also states that in this class, we will consider <term>declarative opinions as statements</term> for the sake of learning, even though the truth values of opinions can be subjective.</li>
+                <li>A sentence that does not have a truth value (like a question or a command) is <term>not a statement</term>.</li>
+            </ul>
+        </subsection>
+        
+        <subsection>
+            <title>Negating Simple Statements</title>
+            <ul>
+                <li>In logic, the <term>negation</term> of a statement is <term>another statement which has the opposite truth value</term> from the original statement. If the original statement is true, its negation is false, and vice-versa.</li>
+                <li>Forming negations of simple statements can be straightforward. Often, adding "not" or a phrase like "It's not true that..." works.</li>
+                <li><term>Examples of Negating Simple Statements:</term>
+                    <ul>
+                        <li><term>Statement:</term> Today is Monday.
+                            <ul>
+                                <li><term>Negation:</term> Today is not Monday.</li>
+                                <li><term>Negation:</term> It's not true that today is Monday.</li>
+                            </ul>
+                        </li>
+                        <li><term>Statement:</term> The ground is wet.
+                            <ul>
+                                <li><term>Negation:</term> The ground is not wet.</li>
+                                <li><term>Negation:</term> It's not the case that the ground is wet.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </subsection>
+        
+        <subsection>
+            <title>Quantified Statements (Categorical Statements)</title>
+            <ul>
+                <li>A <term>quantified statement</term>, also known as a categorical statement, is a statement that includes a <term>quantifying word or phrase</term>.</li>
+                <li>Quantified statements are classified as either <term>Universal</term> or <term>Existential</term>.</li>
+            </ul>
+            
+            <subsubsection>
+                <title>Existential Statements</title>
+                <ul>
+                    <li><term>Existential statements</term> are quantified statements that <term>assert the existence of at least one element</term> in a category.</li>
+                    <li>They typically use the word "Some" or related phrases.</li>
+                    <li>The word <term>"some"</term> in logic means <term>"at least one, possibly more"</term>. It does not imply that there must be more than one.</li>
+                    <li><term>Examples of Existential Statements:</term>
+                        <ul>
+                            <li>"Some A are B."</li>
+                            <li>"Some A aren't B."</li>
+                            <li>Some boys don't love cars.</li>
+                            <li>Some boys love cars.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </subsubsection>
+            
+            <subsubsection>
+                <title>Universal Statements</title>
+                <ul>
+                    <li><term>Universal statements</term> are quantified statements that <term>affirm or deny a quality about an entire category</term>.</li>
+                    <li>They typically use words like "All" or "No".</li>
+                    <li>"All A are B" is considered a <term>positive universal</term> statement.</li>
+                    <li>"No A are B" is considered a <term>negative universal</term> statement.</li>
+                    <li><term>Examples of Universal Statements:</term>
+                        <ul>
+                            <li>"All A are B"</li>
+                            <li>"No A are B"</li>
+                            <li>All boys love cars.</li>
+                            <li>No boys love cars.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </subsubsection>
+        </subsection>
+        
+        <subsection>
+            <title>Diagramming Quantified Statements</title>
+            <p>Venn diagrams can be used to represent quantified statements visually. These diagrams typically involve overlapping circles representing categories.</p>
+            <ul>
+                <li><term>Diagramming Universal Statements:</term>
+                    <ul>
+                        <li><term>All A are B:</term> To diagram this, the region of A that is <em>not</em> part of B is <term>shaded</term>. The shading indicates this region is empty (has no elements).</li>
+                        <figure>
+                            <caption>A Venn diagram with two overlapping circles, A and B. The part of circle A that does not overlap with circle B is shaded.</caption>
+                        </figure>
+                        <li><term>No A are B:</term> To diagram this, the region where A and B <term>overlap</term> (the football-shaped region) is <term>shaded</term>. The shading indicates this region is empty.</li>
+                        <figure>
+                            <caption>A Venn diagram with two overlapping circles, A and B. The overlapping region between A and B is shaded.</caption>
+                        </figure>
+                    </ul>
+                </li>
+                <li><term>Diagramming Existential Statements:</term>
+                    <ul>
+                        <li><term>Some A are B (or Some B are A):</term> This is diagrammed by placing an <term>X in the region where A and B overlap</term>. This indicates that at least one element exists in that specific region.</li>
+                        <figure>
+                            <caption>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the overlapping region between A and B.</caption>
+                        </figure>
+                        <li><term>Some A are not B:</term> This is diagrammed by placing an <term>X in the region of A which is not shared with B</term>. This indicates at least one element exists in that specific region.</li>
+                        <figure>
+                            <caption>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the part of circle A that does not overlap with circle B.</caption>
+                        </figure>
+                        <li><term>Some B are not A:</term> This is diagrammed by placing an <term>X in the region of B which is not shared with A</term>. This indicates at least one element exists in that specific region.</li>
+                        <figure>
+                            <caption>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the part of circle B that does not overlap with circle A.</caption>
+                        </figure>
+                    </ul>
+                </li>
+                <li>In both universal and existential diagrams, the <term>unmarked or unshaded regions may or may not have elements</term>.</li>
+            </ul>
+            
+            <p><term>Examples with Specific Categories:</term></p>
+                <image width="60%">
+                    <shortdescription>This will become alt text.</shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="fig-allboys">
+                    <diagram dimensions="(300,180)" margins="5">
+                    <coordinates bbox="(0,0,10,6)">
+                        <define-shapes>
+                        <circle at="B" center="(4,3)" radius="2"/>  
+                        <circle at="C" center="(6,3)" radius="2"/>  
+                        </define-shapes>
+
+                        <shape shapes="B,C" operation="difference" fill="gray" stroke="none"/>
+                        <shape shape="B" stroke="black"/>
+                        <shape shape="C" stroke="black"/>
+                        
+                        <label anchor="(2,3)" alignment="nw"><m>B</m> (Boys)</label>
+                        <label anchor="(8,3)" alignment="ne"><m>C</m> (Car lovers)</label>
+                        <label anchor="(5,5.5)">All boys love cars</label>
+                    </coordinates>
+                    </diagram>
+                    
+                </prefigure>
+            </image>
+            <ul>
+                <li>All boys love cars:
+                    <figure>
+                        <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The part of circle B that does not overlap with circle C is shaded.</caption>
+                    </figure>
+                </li>
+
+                <li>Some boys love cars:
+                    <figure>
+                        <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the overlapping region between B and C.</caption>
+                    </figure>
+                </li>
+                <li>No boys love cars:
+                    <figure>
+                        <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The overlapping region between B and C is shaded.</caption>
+                    </figure>
+                </li>
+                <li>Some boys don't love cars:
+                    <figure>
+                        <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the part of circle B that does not overlap with circle C.</caption>
+                    </figure>
+                </li>
+            </ul>
+        </subsection>
+        
+        <subsection>
+            <title>Negating Quantified Statements</title>
+            <p>Negating quantified statements involves changing the type of statement (universal to existential and vice-versa) and often changing the quality (affirmative to negative and vice-versa).</p>
+            <ul>
+                <li>The rules for negating basic quantified statements are:
+                    <ul>
+                        <li>The negation of "<term>All A are B</term>" is "<term>Some A are not B</term>".</li>
+                        <figure>
+                            <caption>Two Venn diagrams side-by-side. The first diagram shows 'All A are B' (part of A outside B is shaded). The second diagram shows 'Some A are not B' (an 'x' is placed in the part of A outside B). A double-headed arrow connects the two diagrams, labeled 'Negation'.</caption>
+                        </figure>
+                        <li>The negation of "<term>Some A are B</term>" is "<term>No A are B</term>".</li>
+                        <figure>
+                            <caption>Two Venn diagrams side-by-side. The first diagram shows 'Some A are B' (an 'x' in the overlap). The second diagram shows 'No A are B' (the overlap is shaded). A double-headed arrow connects the two diagrams, labeled 'Negation'.</caption>
+                        </figure>
+                    </ul>
+                </li>
+                <li>There is a difference between <term>conversational English</term> and <term>formal logic</term> when negating universal statements.</li>
+                <li>In conversational English, one might negate "All Dogs are Mammals" by saying "All Dogs are not Mammals" or "Not All Dogs are Mammals".</li>
+                <li>However, in <term>symbolic logic</term>, a universal statement must be negated with an <term>existential statement</term>.</li>
+                <li>The negation of "All Dogs are Mammals" is <term>"Some Dogs are not Mammals"</term>. This is because we need to <term>assert the existence of at least one element</term> (a dog) which defies the original "all dogs are mammals" statement. Using the word "Some" achieves this.</li>
+            </ul>
+            
+            <p><term>Examples of Negating Quantified Statements:</term></p>
+            <ul>
+                <li>Negation of "<term>All boys love cars</term>" is "<term>Some boys don't love cars</term>". (Correct option B in Top Hat Question #1)</li>
+                <li>Negation of "<term>No birds can fly</term>" is "<term>Some birds can fly</term>".
+                    <ul>
+                        <li>The source material diagrams this as:
+                            <figure>
+                                <caption>Two Venn diagrams side-by-side. The first diagram shows 'No birds are flying things' (overlap of B and F is shaded). The second diagram shows 'Some birds are flying things' (an 'x' in the overlap of B and F). A double-headed arrow connects the two diagrams, labeled 'Negation'. (Note: The diagrams use B for Birds and F for Flying things).</caption>
+                            </figure>
+                        </li>
+                        <li>The source notes that "Some birds are flying things" is logically equivalent to "Some flying things are birds". Both are represented by an X in the overlapping region of Birds (B) and Flying things (F).
+                            <figure>
+                                <caption>Two Venn diagrams side-by-side. The first diagram shows 'Some birds are flying things' (an 'x' in the overlap of B and F). The second diagram shows 'Some flying things are birds' (an 'x' in the overlap of F and B - which is the same region). A double-headed arrow connects the two diagrams, labeled 'is logically equivalent to'.</caption>
+                            </figure>
+                        </li>
+                        <li>Therefore, both "Some birds can fly" and "Some flying things are birds" are listed as possible negations of "No birds can fly". (Options B and F in Top Hat Question #2).</li>
+                    </ul>
+                </li>
+            </ul>
+        </subsection>
+    </section>
+    
+<!--        <section xml:id="sec-precls-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Short Pre-Class Reading</title>
+            <p>Welcome to our introduction to logic! Before class, please read this short primer on basic logical statements.</p>
+            <p>In logic, we often work with <term>statements</term>. A statement is a <term>declarative sentence that can be determined to be either true or false</term>. For example, the sentence "Today is Monday" is a statement because it is either true or false. Similarly, "The ground is wet" is a statement. Sentences that aren't statements include questions ("What time is it?") or commands ("Close the door!"), because they don't have a truth value. For simplicity in this class, we'll even treat declarative opinions, like "Pizza is the best food," as statements.</p>
+            <p>Once we have a statement, we can talk about its <term>negation</term>. The negation of a statement is a new statement that has <term>the opposite truth value</term>. If the original statement is true, its negation is false, and if the original statement is false, its negation is true. To form a negation, you can often simply add the word "not" or a phrase like "It's not true that...". For instance, the negation of "Today is Monday" can be "Today is not Monday" or "It's not true that today is Monday".</p>
+            <p>Some statements involve <term>quantifiers</term> like "all" or "some". These are called <term>quantified statements</term> or categorical statements. We will learn how to work with these types of statements, including how to diagram and negate them, in class. Understanding the difference between "All" statements (Universal) and "Some" statements (Existential) is key. The word <term>"some"</term> in logic is specifically defined as meaning <term>at least one, possibly more</term>.</p>
+        </section>
+        
+        <section xml:id="sec-preclsq-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Pre-Class Reading Quiz</title>
+            <p>Answer the following questions based on the reading:</p>
+            <ol>
+                <li>Based on the reading, which of the following is the best definition of a statement?
+                    <ol type="a">
+                        <li>A sentence that expresses an opinion.</li>
+                        <li>A sentence that is always true.</li>
+                        <li>A question that requires an answer.</li>
+                        <li>A declarative sentence that has a truth value.</li>
+                    </ol>
+                </li>
+                <li>What is the negation of the statement "The ground is wet"?
+                    <ol type="a">
+                        <li>Is the ground wet?</li>
+                        <li>The ground is not wet.</li>
+                        <li>Make the ground wet.</li>
+                        <li>The ground is sometimes wet.</li>
+                    </ol>
+                </li>
+                <li>In logic, what does the word "some" mean?
+                    <ol type="a">
+                        <li>Exactly one.</li>
+                        <li>At least two.</li>
+                        <li>At least one, possibly more.</li>
+                        <li>Many, but not all.</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        
+        <section xml:id="sec-postclsq-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+            <title>Post-Class Quiz</title>
+            <p>Answer the following questions based on our class discussion and notes:</p>
+            <ol>
+                <li>Consider the statement "All students are prepared".
+                    <ol type="a">
+                        <li>Is this a Universal or Existential statement?</li>
+                        <li>Draw a diagram representing this statement using 'S' for Students and 'P' for Prepared.</li>
+                        <li>What is the correct negation of this statement in formal logic?</li>
+                    </ol>
+                </li>
+                <li>Consider the statement "Some cats are friendly".
+                    <ol type="a">
+                        <li>Is this a Universal or Existential statement?</li>
+                        <li>Draw a diagram representing this statement using 'C' for Cats and 'F' for Friendly.</li>
+                        <li>What is the correct negation of this statement in formal logic?</li>
+                    </ol>
+                </li>
+                <li>Draw the diagram that represents the statement "Some A are not B".</li>
+                <li>According to the rules for negating quantified statements covered in class, what is the negation of "No A are B"?</li>
+                <li>Explain the key difference between negating a universal statement like "All dogs are mammals" in conversational English versus formal logic, according to our notes.</li>
+            </ol>
+
+
+        </section>
+-->
