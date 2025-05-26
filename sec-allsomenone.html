@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>All, some, none</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Liberal Arts Math for Visually Impaired / Blind Students">
+<meta property="book:author" content="Dr. Ameya S. Kolarkar">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="bibs-math-book.html"><span class="title">Liberal Arts Math for Visually Impaired / Blind Students:</span> <span class="subtitle">Satisfies Florida’s Liberal Arts Math Requirement</span></a></h1>
+<p class="byline">Dr. Ameya S. Kolarkar</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-fcp-basics.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-FCP-factorials-allsomenone.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="interactive-demo.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Venn-Diagrams.html" class="internal"><span class="codenumber">1</span> <span class="title">Venn Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Visualizing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-set-th-notation.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Some Notation for Set Theory</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-Venn-Diagrams-5.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Example 1: Survey 2 Categories, Overlapping "or"</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-FCP-factorials-allsomenone.html" class="internal"><span class="codenumber">2</span> <span class="title">FCP, Factorials, All/Some/None</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-fcp-basics.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Fundamental Counting Principle</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-fcp-basics.html#ssec-fcp-intro-act" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Intro Activity:</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-allsomenone.html" class="internal"><span class="codenumber">2.2</span> <span class="title">All, some, none</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-allsomenone.html#sec-allsomenone-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Method 1.</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="interactive-demo.html" class="internal"><span class="codenumber">3</span> <span class="title">Interactive Math Demo</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sets-and-counting.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Sets and Counting</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="worksheet-counting.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Worksheet: Counting Combinations and Subsets</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-allsomenone"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">All, some, none</span>
+</h2>
+<div class="para" id="sec-allsomenone-2">Suppose you are ordering pizza, and you have the options of ordering any combination of toppings from two topping choices: jalapenos, pineapple. (Only two for now, for calculating convenience. Not to worry, we will have more toppings later!) You may get no toppings, any one topping, or all toppings. How many options do you have? (As in, how many different kinds of pizzas can you order?)</div>
+<section class="section" id="sec-allsomenone-3"><h3 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="space"> </span><span class="title">Method 1.</span>
+</h3>
+<div class="para" id="sec-allsomenone-3-2">You may write down all options and count the number. Let’s assign jalapenos the letter J, and pineapples the letter P. Then you can have:</div>
+<ol class="decimal">
+<li id="sec-allsomenone-3-3-1"><div class="para" id="p-derived-sec-allsomenone-3-3-1">neither J nor P (no toppings)</div></li>
+<li id="sec-allsomenone-3-3-2"><div class="para" id="p-derived-sec-allsomenone-3-3-2">J</div></li>
+<li id="sec-allsomenone-3-3-3"><div class="para" id="p-derived-sec-allsomenone-3-3-3">P</div></li>
+<li id="sec-allsomenone-3-3-4"><div class="para" id="p-derived-sec-allsomenone-3-3-4">JP</div></li>
+</ol>
+<div class="para" id="sec-allsomenone-3-4">So we get four options! Our answer is 4.</div></section><div class="para" id="sec-allsomenone-4">Just one example does not give us a pattern. Let’s look at another. Let us add another topping (told you more were coming!): pepperoni, and let’s assign it the letter R. How many different combinations can you have now? Remember, you can have no toppings, some toppings, or all toppings.</div>
+<div class="para" id="sec-allsomenone-5">Let’s lay them out, and count them manually:</div>
+<ol class="decimal">
+<li id="sec-allsomenone-6-1"><div class="para" id="p-derived-sec-allsomenone-6-1">no toppings</div></li>
+<li id="sec-allsomenone-6-2"><div class="para" id="p-derived-sec-allsomenone-6-2">J</div></li>
+<li id="sec-allsomenone-6-3"><div class="para" id="p-derived-sec-allsomenone-6-3">P</div></li>
+<li id="sec-allsomenone-6-4"><div class="para" id="p-derived-sec-allsomenone-6-4">R</div></li>
+<li id="sec-allsomenone-6-5"><div class="para" id="p-derived-sec-allsomenone-6-5">JP</div></li>
+<li id="sec-allsomenone-6-6"><div class="para" id="p-derived-sec-allsomenone-6-6">JR</div></li>
+<li id="sec-allsomenone-6-7"><div class="para" id="p-derived-sec-allsomenone-6-7">PR</div></li>
+<li id="sec-allsomenone-6-8"><div class="para" id="p-derived-sec-allsomenone-6-8">JPR</div></li>
+</ol>
+<div class="para" id="sec-allsomenone-7">So, that’s eight toppings. Our answer is 8. A pattern seems to be emerging. It looks like the answer for <span class="process-math">\(n\)</span> toppings is <span class="process-math">\(2^n\text{.}\)</span> Let’s verify for <span class="process-math">\(n=1\text{,}\)</span> that is, one topping. Math says <span class="process-math">\(2^1\text{,}\)</span> so 2 options. And counting the options agrees. We can either have that topping or not.</div>
+<div class="para" id="sec-allsomenone-8">Thus, <span class="process-math">\(2^n\)</span> seems to be correct. And the <span class="process-math">\(n=1\)</span> case tells us why. For every topping, there can be two options: either that topping is included or it is not. Thus, two options for each of <span class="process-math">\(n\)</span> toppings will give us <span class="process-math">\(2^n\)</span> options. Thus confirmed!</div>
+<div class="para" id="sec-allsomenone-9">Let’s have some more fun with the concept.</div>
+<div class="para" id="sec-allsomenone-10">You are at the Indian store buying samosas. These are delicious fried savory pastries in the shape of a tetrahedron (roughly). These are stuffed with spiced potatoes and peas, but you may add cashews and/or paneer (like tofu) to it. How many different types of samosas can you have?</div>
+<div class="para" id="sec-allsomenone-11">Think about it. Then let’s discuss.</div>
+<div class="para" id="sec-allsomenone-12">Since potatoes and peas are part of the samosa, but you can add or not add two more items -cashews and/or paneer - that gives us four options. You may include cashwes or not (2 options) and you may include paneer or not (2 options) giving total 2 times 2 = 4 options.</div>
+<div class="para" id="sec-allsomenone-13">Here’s another interesting one.</div>
+<div class="para" id="sec-allsomenone-14">In a burrito, your teacher may include any combination of 4 items: rice, beans, tofu, veggies. But, you must include at least one item. That is, the burrito cannot be empty. How many combinations can you make? Watch out, this one could be tricky if you are not careful.</div>
+<details id="sec-allsomenone-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-allsomenone-15-1-1">In a burrito, your teacher may include any combination of 4 items: rice, beans, tofu, and veggies. But, you must include at least one item. That is, the burrito cannot be empty. How many combinations can you make? Watch out, this one could be tricky if you are not careful.</div>
+<div class="solutions">
+<details id="sec-allsomenone-15-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content"><div class="para" id="sec-allsomenone-15-2-1">How many total combinations are possible with 4 items, including the empty set?</div></div></details><details id="sec-allsomenone-15-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-allsomenone-15-3-1">15</div></div></details><details id="sec-allsomenone-15-4" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-allsomenone-15-4-1">Each of the 4 items can either be included or not, so there are \( 2^4 = 16 \) total combinations. But one of these is the empty burrito (no items), which is not allowed. So there are \( 16 - 1 = 15 \) valid combinations.</div></div></details>
+</div></article></details><div class="para" id="sec-allsomenone-16">Now let us tackle the case where a few options are repeated. Take two words CAB and BIB.</div>
+<div class="para" id="sec-allsomenone-17">In how many different or distinct ways can you rearrange the letters of the word CAB? Let’s write them all out and count. CAB, CBA, ACB, ABC, BAC, BCA. Six distinct ways.</div>
+<div class="para" id="sec-allsomenone-18">Mathematically, how many ways to choose the first letter? 3. How many ways to choose the second letter? 2, since one of the letters is unavailable to be chosen again since it was already chosen as the first letter. And how many ways to pick the third letter? Only one is left, so one way to pick that one. Thus, total ways is 3 times 2 times 1 = 6. This, as we have seen before, is the factorial <span class="process-math">\(3!\)</span>
+</div>
+<div class="para" id="sec-allsomenone-19">Now let us try the same thing with BIB. We get BIB, BBI, IBB. Only three distinct ways. This is because, since the two letters B are indistinguishable from each other, any exchange of those two letters does not give us distinct arrangements. So the answer here is 3, which is half of 6 for the other word CAB.</div>
+<div class="para" id="sec-allsomenone-20">Again, with just one example, we do not see the pattern. So let’s do another. Four letter words! Say, CORN and MOOO.</div>
+<div class="para" id="sec-allsomenone-21">How many arrangements with CORN? Four distinct letters, therefore <span class="process-math">\(4! = 24\text{.}\)</span>
+</div>
+<div class="para" id="sec-allsomenone-22">For MOOO, however, there are fewer. Let’s count them all. MOOO, OMOO, OOMO, OOOM. Just four distinct arrangements. There are <span class="process-math">\(4! = 24\)</span> possible, but 3 letters are identical, and those three letters can be arranged in <span class="process-math">\(3! = 6\)</span> different ways. Thus you are dividing the total possible number by the total repeated, indistinct possibilities, which is <span class="process-math">\(3!\text{.}\)</span> Thus the total distinct arrangements in this case is <span class="process-math">\(4!\)</span> divided by <span class="process-math">\(3!\text{,}\)</span> which is <span class="process-math">\(24/6 = 4\text{.}\)</span>
+</div>
+<div class="para" id="sec-allsomenone-23">General rule. The number of distinct arrangements of <span class="process-math">\(n\)</span> items of which <span class="process-math">\(m\)</span> are repeated is <span class="process-math">\(n!/m!\)</span> . If there are multiple repeated items, you divide by the factorial of all the ones that are repeated. For example, for BOOM, total distinct ways is <span class="process-math">\(4!/2! = 12\text{.}\)</span> For MOMO, total distinct ways is <span class="process-math">\(4!/(2!*2!) = 6\text{.}\)</span> This is since two letters are repeated twice, M and O.</div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-fcp-basics.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="interactive-demo.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
