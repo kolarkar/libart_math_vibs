@@ -123,49 +123,123 @@
                 <li>In both universal and existential diagrams, the <term>unmarked or unshaded regions may or may not have elements</term>.</li>
             </ul>
             
-            <p><term>Examples with Specific Categories:</term></p>
+    <p><term>Examples with Specific Categories:</term></p>
+     <ul>
+        <li>All boys love cars:
+            <figure>
+                <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The part of circle B that does not overlap with circle C is shaded.</caption>
                 <image width="60%">
-                    <shortdescription>This will become alt text.</shortdescription>
-                <prefigure xmlns="https://prefigure.org" label="fig-allboys">
+                <shortdescription>This will become alt text.</shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="fig-venn-allboys">
                     <diagram dimensions="(300,180)" margins="5">
                     <coordinates bbox="(0,0,10,6)">
                         <define-shapes>
-                        <circle at="B" center="(4,3)" radius="2"/>  
-                        <circle at="C" center="(6,3)" radius="2"/>  
+                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                        <circle at="C" center="(6,3)" radius="1.5"/>  
                         </define-shapes>
 
                         <shape shapes="B,C" operation="difference" fill="gray" stroke="none"/>
                         <shape shape="B" stroke="black"/>
                         <shape shape="C" stroke="black"/>
                         
-                        <label anchor="(2,3)" alignment="nw"><m>B</m> (Boys)</label>
-                        <label anchor="(8,3)" alignment="ne"><m>C</m> (Car lovers)</label>
+                        <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                        <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
                         <label anchor="(5,5.5)">All boys love cars</label>
+                        <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                        <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
                     </coordinates>
                     </diagram>
-                    
                 </prefigure>
-            </image>
-            <ul>
-                <li>All boys love cars:
-                    <figure>
-                        <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The part of circle B that does not overlap with circle C is shaded.</caption>
-                    </figure>
-                </li>
+                </image>
+            </figure>
+        </li>
 
                 <li>Some boys love cars:
                     <figure>
                         <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the overlapping region between B and C.</caption>
-                    </figure>
+ <image width="60%">
+    <shortdescription>A Venn diagram of some boys love cars.</shortdescription>
+    <prefigure xmlns="https://prefigure.org" label="fig-venn-someboys">
+        <diagram dimensions="(300,180)" margins="5">
+  <coordinates bbox="(0,0,10,6)">
+    <define-shapes>
+      <circle at="B" center="(4,3)" radius="1.5"/>  
+      <circle at="C" center="(6,3)" radius="1.5"/>  
+      </define-shapes>
+
+      <shape shape="B" stroke="black"/>
+      <shape shape="C" stroke="black"/>
+                        
+      <label anchor="(5,3)">X</label>
+
+      <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+      <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+      <label anchor="(5,5.5)">Some boys love cars</label>
+      <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+      <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+
+  </coordinates>
+</diagram>         
+</prefigure>
+</image>          
+</figure>
                 </li>
                 <li>No boys love cars:
                     <figure>
                         <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The overlapping region between B and C is shaded.</caption>
+                                    <image width="60%">
+                <shortdescription>This will become alt text.</shortdescription>
+                <prefigure xmlns="https://prefigure.org" label="fig-venn-noboys">
+                    <diagram dimensions="(300,180)" margins="5">
+                    <coordinates bbox="(0,0,10,6)">
+                        <define-shapes>
+                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                        </define-shapes>
+
+                        <shape shapes="B,C" operation="intersection" fill="gray" stroke="none"/>
+                        <shape shape="B" stroke="black"/>
+                        <shape shape="C" stroke="black"/>
+                        
+                        <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                        <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                        <label anchor="(5,5.5)">No boys love cars</label>
+                        <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                        <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+                    </coordinates>
+                    </diagram>
+                </prefigure>
+                </image>
                     </figure>
                 </li>
                 <li>Some boys don't love cars:
                     <figure>
                         <caption>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the part of circle B that does not overlap with circle C.</caption>
+                    <image width="60%">
+    <shortdescription>A Venn diagram of some boys love cars.</shortdescription>
+    <prefigure xmlns="https://prefigure.org" label="fig-venn-someboysdont">
+        <diagram dimensions="(300,180)" margins="5">
+  <coordinates bbox="(0,0,10,6)">
+    <define-shapes>
+      <circle at="B" center="(4,3)" radius="1.5"/>  
+      <circle at="C" center="(6,3)" radius="1.5"/>  
+      </define-shapes>
+
+      <shape shape="B" stroke="black"/>
+      <shape shape="C" stroke="black"/>
+                        
+      <label anchor="(3.5,3)">X</label>
+
+      <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+      <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+      <label anchor="(5,5.5)">Some boys don't love cars</label>
+      <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+      <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+
+  </coordinates>
+</diagram>         
+</prefigure>
+</image>          
                     </figure>
                 </li>
             </ul>
