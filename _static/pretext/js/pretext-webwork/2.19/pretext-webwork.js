@@ -50,6 +50,7 @@ function handleWW(ww_id, action) {
     loader.style.display = 'flex';
     loader.style.alignItems = 'center';
     loader.style.justifyContent = 'center';
+    loader.style.marginTop = '0';
     loader.tabIndex = -1;
     const loaderText = document.createElement('span');
     loaderText.textContent = 'Loading';
@@ -616,7 +617,7 @@ function translateHintSol(ww_id, body_div, ww_domain, b_ptx_has_hint, b_ptx_has_
         knowlSummary.className = '';
         knowlSummary.classList.add('knowl__link');
 
-        const summaryLabel = knowlSummary.getElementsByTagName('div')[0];
+        const summaryLabel = knowlSummary.children[0];
         summaryLabel.remove();
 
         const newLabelSpan = document.createElement('span');

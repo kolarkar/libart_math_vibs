@@ -12,20 +12,33 @@
  */
 
 function scrollTocToActive() {
-    pagefilename  = window.location.href;
-    pagefilename  = pagefilename.match(/[^\/]*$/)[0];
-    possibletocentries = document.querySelectorAll('#ptx-toc a[href="' + pagefilename + '"]');
-    if (possibletocentries.length == 0) {
-        console.log("linked below a subsection");
-        pagefilename  = pagefilename.match(/^[^\#]*/)[0];
-        possibletocentries = document.querySelectorAll('#ptx-toc a[href="' + pagefilename + '"]');
+    //Try to figure out current TocItem from URL
+    let fileNameWHash = window.location.href.split("/").pop();
+    let fileName = fileNameWHash.split("#")[0];
+
+    //Find just the filename in ToC
+    let tocEntry = document.querySelector('#ptx-toc a[href="' + fileName + '"]');
+    if (!tocEntry) {
+        return; //complete failure, get out
     }
-    if (possibletocentries.length == 0) {
-        console.log("error, cannot find", pagefilename, "in TOC");
-        return
+
+    //See if we can also match fileName#hash
+    let tocEntryWHash = document.querySelector(
+        '#ptx-toc a[href="' + fileNameWHash + '"]'
+    );
+    if (tocEntryWHash) {
+        //Matched something below a subsection - activate the list item that contains it
+        tocEntryWHash.closest("li").classList.add("active");
     }
-    possibletocentries[0].scrollIntoView({block: "center"});
-    possibletocentries[0].classList.add("active");}
+
+    //Now activate ToC item for fileName and scroll to it
+    //  Don't use scrollIntoView because it changes users tab position in Chrome
+    //  and messes up keyboard navigation
+    tocEntry.closest("li").classList.add("active");
+    // Scroll only if the tocEntry is below the bottom half of the window,
+    // scrolling to that position.
+    document.querySelector("#ptx-toc").scrollTop = tocEntry.offsetTop - 0.4 * self.innerHeight;
+}
 
 function toggletoc() {
    thesidebar = document.getElementById("ptx-sidebar");
@@ -40,13 +53,9 @@ function toggletoc() {
    scrollTocToActive();
 }
 
-window.addEventListener("load",function(event) {
+window.addEventListener("DOMContentLoaded",function(event) {
        thetocbutton = document.getElementsByClassName("toc-toggle")[0];
        thetocbutton.addEventListener('click', () => toggletoc() );
-});
-
-window.addEventListener("load",function(event) {
-       scrollTocToActive();
 });
 
 /* jump to next page if reader tries to scroll past the bottom */
@@ -70,7 +79,7 @@ window.addEventListener("load",function(event) {
 
 
 //-----------------------------------------------------------------------------
-// Dynamic TOC logic 
+// Dynamic TOC logic
 //-----------------------------------------------------------------------------
 
 //item is assumed to be expander in toc-item
@@ -78,7 +87,7 @@ function toggleTOCItem(expander) {
     let listItem = expander.closest(".toc-item");
     listItem.classList.toggle("expanded");
     let expanded = listItem.classList.contains("expanded");
-    
+
     let itemType = getTOCItemType(listItem);
     if(expanded) {
         expander.title = "Close" + (itemType !== "" ? " " + itemType : "");
@@ -146,7 +155,8 @@ window.addEventListener("DOMContentLoaded", function(event) {
             expander.classList.add('toc-expander');
             expander.classList.add('toc-chevron-surround');
             expander.title = 'toc-expander';
-            expander.innerHTML = '<span class="icon material-symbols-outlined" aria-hidden="true">chevron_left</span>';
+            // content of span is set by CSS :before rule.
+            expander.innerHTML = '<span class="icon material-symbols-outlined" aria-hidden="true"></span>';
             tocItem.querySelector(".toc-title-box").append(expander);
             expander.addEventListener('click', () => {
                 toggleTOCItem(expander);
@@ -162,4 +172,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
             }
         }
       }
+});
+
+// This needs to be after the TOC's geometry is settled
+window.addEventListener("DOMContentLoaded",function(event) {
+    scrollTocToActive();
 });
