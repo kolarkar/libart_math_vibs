@@ -109,29 +109,28 @@
                         <li><term>Some A are B (or Some B are A):</term> This is diagrammed by placing an <term>X in the region where A and B overlap</term>. This indicates that at least one element exists in that specific region.</li>
                         <figure>
                             <caption>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the overlapping region between A and B.</caption>
-<image width="60%">
-    <shortdescription>A Venn diagram of "Some A are B".</shortdescription>
-    <prefigure xmlns="https://prefigure.org" label="fig-venn-someAareB">
-        <diagram dimensions="(300,180)" margins="5">
-  <coordinates bbox="(0,0,10,6)">
-    <define-shapes>
-      <circle at="B" center="(4,3)" radius="1.5"/>  
-      <circle at="C" center="(6,3)" radius="1.5"/>  
-      </define-shapes>
+                            <image width="60%">
+                                <shortdescription>A Venn diagram of "Some A are B".</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-someAareB">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                    <coordinates bbox="(0,0,10,6)">
+                                    <define-shapes>
+                                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                                    </define-shapes>
 
-      <shape shape="B" stroke="black"/>
-      <shape shape="C" stroke="black"/>
+                                    <shape shape="B" stroke="black"/>
+                                    <shape shape="C" stroke="black"/>
                         
-      <label anchor="(5,3)">X</label>
-
-      <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
-      <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
-      <label anchor="(5,5.5)">Some A are B</label>
+                                    <label anchor="(5,3)">X</label>
+                                    <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                                    <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                                    <label anchor="(5,5.5)">Some A are B</label>
  
-  </coordinates>
-</diagram>         
-</prefigure>
-</image>          
+                                    </coordinates>
+                                    </diagram>         
+                                </prefigure>
+                            </image>          
                         </figure>
                         <li><term>Some A are not B:</term> This is diagrammed by placing an <term>X in the region of A which is not shared with B</term>. This indicates at least one element exists in that specific region.</li>
                         <figure>
