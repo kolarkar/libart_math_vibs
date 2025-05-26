@@ -44,15 +44,15 @@
       </svg>
     </g>
   </g>
-  <g id="label-2" transform="translate(155.0,20.0) translate(2.2,0.0)">
+  <g id="label-2" transform="translate(155.0,20.0) translate(-57.2,-7.0)">
     <g id="g-2">
-      <text font-family="sans" font-size="14">All boys love cars</text>
+      <text font-family="sans" font-size="14" x="0.0" y="10.6">All boys love cars</text>
     </g>
   </g>
-  <g id="label-3" transform="translate(101.0,161.0) translate(-7.0,-4.2)">
+  <g id="label-3" transform="translate(101.0,161.0) translate(-32.0,-6.7)">
     <g id="g-3">
-      <text font-family="sans" font-size="14">B</text>
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.648px" width="14.080px" height="7.744px" role="img" focusable="false" viewBox="0 -464 778 428" x="0.0" y="0.0">
+      <text font-family="sans" font-size="14" x="0.0" y="10.0">B</text>
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.648px" width="14.080px" height="7.744px" role="img" focusable="false" viewBox="0 -464 778 428" x="13.6" y="1.6">
         <defs>
           <path id="MJX-4-TEX-N-2261" d="M56 444Q56 457 70 464H707Q722 456 722 444Q722 430 706 424H72Q56 429 56 444ZM56 237T56 250T70 270H707Q722 262 722 250T707 230H70Q56 237 56 250ZM56 56Q56 71 72 76H706Q722 70 722 56Q722 44 707 36H70Q56 43 56 56Z"/>
         </defs>
@@ -64,13 +64,13 @@
           </g>
         </g>
       </svg>
-      <text font-family="sans" font-size="14">Boys</text>
+      <text font-family="sans" font-size="14" x="32.1" y="10.0">Boys</text>
     </g>
   </g>
-  <g id="label-4" transform="translate(209.0,161.0) translate(-7.0,-4.2)">
+  <g id="label-4" transform="translate(209.0,161.0) translate(-49.4,-5.4)">
     <g id="g-4">
-      <text font-family="sans" font-size="14">C</text>
-      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.648px" width="14.080px" height="7.744px" role="img" focusable="false" viewBox="0 -464 778 428" x="0.0" y="0.0">
+      <text font-family="sans" font-size="14" x="0.0" y="10.6">C</text>
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: 0.648px" width="14.080px" height="7.744px" role="img" focusable="false" viewBox="0 -464 778 428" x="13.3" y="2.2">
         <defs>
           <path id="MJX-5-TEX-N-2261" d="M56 444Q56 457 70 464H707Q722 456 722 444Q722 430 706 424H72Q56 429 56 444ZM56 237T56 250T70 270H707Q722 262 722 250T707 230H70Q56 237 56 250ZM56 56Q56 71 72 76H706Q722 70 722 56Q722 44 707 36H70Q56 43 56 56Z"/>
         </defs>
@@ -82,7 +82,7 @@
           </g>
         </g>
       </svg>
-      <text font-family="sans" font-size="14">Car lovers</text>
+      <text font-family="sans" font-size="14" x="31.9" y="10.6">Car lovers</text>
     </g>
   </g>
 </svg>
