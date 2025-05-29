@@ -3,9 +3,12 @@
     <section xml:id="sec-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
  
         <title>Notes on: Statements, Negations, and Quantifiers</title>
-        
-        <p>These notes cover the fundamental concepts of statements, negations, and quantified statements as introduced in our material.</p>
-        
+        <introduction>
+            <p>
+                These notes cover the fundamental concepts of statements, negations, and quantified statements as introduced in our material.
+            </p>
+        </introduction>
+    
         <subsection>
             <title>What is a Statement?</title>
             <ul>
@@ -238,6 +241,81 @@
                 </li>
                 <li>In both universal and existential diagrams, the <term>unmarked or unshaded regions may or may not have elements</term>.</li>
             </ul>
+
+ <paragraphs>
+    <title>Check Your Understanding</title>
+     <p>
+        Does this need a paragraph p tag?
+     </p>
+  
+ </paragraphs>
+ 
+    <exercise>
+  <title>A structured exercise</title>
+  <introduction>
+    <p>
+      Looking back at the various cases above, is there one that is "missing"? 
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Please identify the case that is not discussed above and write it down, and then diagram it.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        It's one of the <em>universal</em> statements above.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        "All B are A." How will you diagram it?
+      </p>
+    </answer>
+    <solution>
+      <p>
+        All B are A is not mentioned or diagrammed above. This diagram will be similar to the All A are B, except, this time it will the the circle of B that is outside the intersection that will be shaded, indicating that this region is empty (or has no elements).
+      </p>
+    </solution>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Think of a situation/example in your life where this (All A are B or the other way around) might be the case. 
+      </p>
+    </statement>
+    <answer>
+      <p>
+        No right or wrong answer here - just you personal lived experience!
+      </p>
+    </answer>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Can you think of another way to diagram "All A are B"? Why do you think we chose this representation?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        No right or wrong answer here - just you personal lived experience!
+      </p>
+    </answer>
+  </task>
+
+  <conclusion>
+    <p>
+      There may be different ways to do a Venn diagram. In this class, we will try to be consistent, especially when there are more-than-one cases possible.
+    </p>
+  </conclusion>
+
+</exercise>
+
+
             
     <p><term>Examples with Specific Categories:</term></p>
      <ul>
@@ -403,7 +481,76 @@
                 </li>
             </ul>
         </subsection>
+
+
+
+    <exercise>
+  <title>A structured exercise</title>
+  <introduction>
+    <p>
+      Here is where we give the student the background information
+      required to start accomplishing tasks.
+    </p>
+  </introduction>
+
+  <task>
+    <statement>
+      <p>
+        The first step to do.
+      </p>
+    </statement>
+    <hint>
+      <p>
+        A little hint.
+      </p>
+    </hint>
+    <answer>
+      <p>
+        Just the answer.
+      </p>
+    </answer>
+    <solution>
+      <p>
+        All the glorious details about how to do the first step.
+      </p>
+    </solution>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        The second step to do.
+        We'll be lazy and just include an answer.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Just the answer.
+      </p>
+    </answer>
+  </task>
+
+  <conclusion>
+    <p>
+      A little wrap up.
+    </p>
+  </conclusion>
+
+</exercise>
+
+
+  <conclusion>
+    <p>
+      Concluding text. What could be put here? Something like, in the next section, we'll see ... but perhaps not since tha tnext section might change!
+      (Optional.)
+    </p>
+  </conclusion>
+
+
     </section>
+
+
+
     
 <!--        <section xml:id="sec-precls-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
             <title>Short Pre-Class Reading</title>
