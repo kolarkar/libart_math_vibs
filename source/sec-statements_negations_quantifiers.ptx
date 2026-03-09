@@ -127,7 +127,7 @@
                         <figure>
                             <caption>A Venn diagram with two overlapping circles, A and B. The overlapping region between A and B is shaded.</caption>
                                     <image width="60%">
-                <shortdescription>This will become alt text.</shortdescription>
+                <shortdescription>This is a diagrammatic representation of No A are B. It consists of two overlapping circles. </shortdescription>
                 <prefigure xmlns="https://prefigure.org" label="fig-venn-noAareB">
                     <diagram dimensions="(300,180)" margins="5">
                     <coordinates bbox="(0,0,10,6)">

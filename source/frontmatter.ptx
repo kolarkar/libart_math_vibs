@@ -6,8 +6,8 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Dr. Ameya S. Kolarkar</personname>
-      <department>Center for the Advancement of Teaching</department>
+      <personname>Dr. Angie Harris</personname>
+      <department>Department of Mathematics</department>
       <institution>Florida State Univeristy</institution>
     </author>
     <date>
@@ -24,7 +24,7 @@
 
     <copyright>
       <year>2024<ndash />2025</year>
-      <holder>kolarkar</holder>
+      <holder>Angie Harris</holder>
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
