@@ -3,7 +3,11 @@
 <chapter xml:id="ch-Logic_Symbols_and_Statements" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Logic: Symbols and Statements</title>
 
-    <xi:include href="sec-statements_negations_quantifiers.ptx" />
+ <!--   <xi:include href="sec-statements_negations_quantifiers.ptx" /> -->
+
+    <xi:include href="sec-stmt-neg-quant.ptx" />
+
+    <xi:include href="sec-statements-quantifiers-negation.ptx" />
 
     <xi:include href="sec-symbols_conjunctions_disjunctions.ptx" />
 

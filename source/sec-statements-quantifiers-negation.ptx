@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-statements-quantifiers-negation">
+    <title>Statements, Quantifiers, and Negation</title>
+    
+    <objectives xml:id="obj-statements-quantifiers">
+        <introduction>
+            <p>Learning Objectives: [cite: 4]</p>
+        </introduction>
+        <ul>
+            <li><p>Define simple statements [cite: 5]</p></li>
+            <li><p>Define categorical statements [cite: 6]</p></li>
+            <li><p>Diagram categorical statements (Universal and Existential) [cite: 7]</p></li>
+            <li><p>Negate simple and categorical statements [cite: 8]</p></li>
+        </ul>
+    </objectives>
+
+    <subsection xml:id="subsec-conversational-vs-logic">
+        <title>Conversational versus Logic Negations</title>
+        <p>What would you say if you disagree with someone who made an assertion: "All dogs are friendly"? [cite: 11, 12, 18, 19]</p>
+        <p>You might respond with:</p>
+        <ul>
+            <li><p>Not all Dogs are friendly. [cite: 13, 20]</p></li>
+            <li><p>All dogs are not friendly. [cite: 14, 21]</p></li>
+            <li><p>There’s a dog I know about which is not friendly. [cite: 15, 22]</p></li>
+        </ul>
+        <p>In Logic, the statements and their negations must be clear!! [cite: 23] We will talk about how to define these things in this section. [cite: 24]</p>
+    </subsection>
+
+    <subsection xml:id="subsec-definition-statement">
+        <title>Definition of a Statement</title>
+        <assemblage xml:id="def-statement">
+            <title>Statement</title>
+            <p>A declarative sentence that has a truth value. [cite: 27]</p>
+        </assemblage>
+        
+        <p>Examples of Statements: [cite: 28]</p>
+        <ul>
+            <li><p>Today is Monday. [cite: 29]</p></li>
+            <li><p>The ground is wet. [cite: 30]</p></li>
+        </ul>
+        
+        <p>In this class we’ll consider declarative opinions as statements just for the sake of our learning, though opinion truth values can be subjective. [cite: 33]</p>
+
+        <activity xml:id="act-create-statements">
+            <introduction>
+                <p>Provide your own examples: </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>Give me an example of a statement. [cite: 31]</p>
+                    <fillin characters="40"/>
+                </statement>
+                <workspace>1in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>Give me an example of a sentence which is not a statement. [cite: 32]</p>
+                    <fillin characters="40"/>
+                </statement>
+                <workspace>1in</workspace>
+            </task>
+        </activity>
+    </subsection>
+
+    <subsection xml:id="subsec-negating-simple-statements">
+        <title>Negating Simple Statements</title>
+        <p>In logic, the negation of a statement is another statement which has the opposite truth value from the original statement. [cite: 36] Forming negations of statements is sometimes easy: [cite: 37]</p>
+        
+        <table xml:id="table-simple-negations">
+            <title>Examples of Simple Negations</title>
+            <tabular>
+                <col width="50%"/>
+                <col width="50%"/>
+                <row bottom="medium">
+                    <cell><p>Statement [cite: 38]</p></cell>
+                    <cell><p>Negation [cite: 39]</p></cell>
+                </row>
+                <row>
+                    <cell><p>Today is Monday. [cite: 40]</p></cell>
+                    <cell>
+                        <p>Today is not Monday. [cite: 41]</p>
+                        <p>It’s not true that today is Monday. [cite: 42]</p>
+                    </cell>
+                </row>
+                <row>
+                    <cell><p>The ground is wet. [cite: 43]</p></cell>
+                    <cell>
+                        <p>The ground is not wet. [cite: 44]</p>
+                        <p>It’s not the case that the ground is wet. [cite: 45]</p>
+                    </cell>
+                </row>
+            </tabular>
+        </table>
+    </subsection>
+
+    <subsection xml:id="subsec-quantified-statements">
+        <title>Quantified (Categorical) Statements</title>
+        <p>A quantified statement, a.k.a a categorical statement, is a statement which has a quantifying word/phrase: [cite: 47]</p>
+        
+        <assemblage xml:id="def-quantified-types">
+            <title>Existential and Universal Statements</title>
+            <p>We will look at two types of quantified statements: Existential statements and Universal statements. [cite: 78-80]</p>
+            <p>Existential statements are quantified statements which assert the existence of at least one element in a category. [cite: 81] Examples include "Some A are B" and "Some A aren’t B". [cite: 82, 83] The word "some" in logic means at least one, possibly more. [cite: 84] It doesn’t imply that there has to be more than one though. [cite: 85]</p>
+            <p>Universal statements are quantified statements which affirm or deny a quality about an entire category. [cite: 86] Examples include "All A are B" (positive universal) and "No A are B" (negative universal). [cite: 87, 88]</p>
+        </assemblage>
+
+        <subsubsection xml:id="subsubsec-diagramming-universal">
+            <title>Diagramming Universal Statements</title>
+            <p>All A are B. [cite: 91] To diagram this, we shade the crescent shaped region of A which is not part of B. [cite: 92] The shading indicates the region is empty, that is there are no elements in it. [cite: 92] The unmarked regions may or may not have elements. [cite: 93]</p>
+                        
+            <p>No A are B. [cite: 94] To diagram this, we shade the football shaped region where A overlaps with B. [cite: 95] The shading indicates the region is empty, that is there are no elements in it. [cite: 95] The unmarked regions may or may not have elements. [cite: 96]</p>
+                    </subsubsection>
+
+        <subsubsection xml:id="subsubsec-diagramming-existential">
+            <title>Diagramming Existential Statements</title>
+            <p>Some A are B. [cite: 103] Some B are A. [cite: 104] This existential statement is diagrammed by placing an X in the region where A and B overlap, to indicate at least one element exists in that region. [cite: 105] The unmarked regions may or may not have elements. [cite: 106]</p>
+            
+            <p>Some A are not B. [cite: 107] This existential statement is diagrammed by placing an X in the region of A which is not shared with B, to indicate at least one element exists in that region. [cite: 108] The unmarked regions may or may not have elements. [cite: 108]</p>
+            
+            <p>Some B are not A. [cite: 109] This existential statement is diagrammed by placing an X in the region of B which is not shared with A, to indicate at least one element exists in that region. [cite: 110] The unmarked regions may or may not have elements. [cite: 110]</p>
+                    </subsubsection>
+        
+        <table xml:id="table-quantified-examples">
+            <title>Examples of Quantified Statements</title>
+            <tabular>
+                <col width="50%"/>
+                <col width="50%"/>
+                <row bottom="medium">
+                    <cell><p>Quantified Statement</p></cell>
+                    <cell><p>Diagram Type</p></cell>
+                </row>
+                <row>
+                    <cell><p>All boys love cars. [cite: 124]</p></cell>
+                    <cell><p>Universal (Shade crescent of Boys) [cite: 130, 131]</p></cell>
+                </row>
+                <row>
+                    <cell><p>Some boys don’t love cars. [cite: 125]</p></cell>
+                    <cell><p>Existential (X in crescent of Boys) [cite: 132-134]</p></cell>
+                </row>
+                <row>
+                    <cell><p>Some boys love cars. [cite: 128]</p></cell>
+                    <cell><p>Existential (X in intersection) [cite: 135-137]</p></cell>
+                </row>
+                <row>
+                    <cell><p>No boys love cars. [cite: 129]</p></cell>
+                    <cell><p>Universal (Shade intersection) [cite: 138, 139]</p></cell>
+                </row>
+            </tabular>
+        </table>
+    </subsection>
+
+    <subsection xml:id="subsec-negating-quantified-statements">
+        <title>How to Negate Quantified Statements</title>
+        <p>The rules for negating quantified statements follow a crossed relationship between universal and existential forms: [cite: 155]</p>
+        
+        <table xml:id="table-quantified-negation-rules">
+            <title>Negation Rules</title>
+            <tabular>
+                <col width="50%"/>
+                <col width="50%"/>
+                <row bottom="medium">
+                    <cell><p>Original Statement</p></cell>
+                    <cell><p>Negation [cite: 166, 167]</p></cell>
+                </row>
+                <row>
+                    <cell><p>All A are B [cite: 168]</p></cell>
+                    <cell><p>Some A are not B [cite: 169]</p></cell>
+                </row>
+                <row>
+                    <cell><p>Some A are B [cite: 170]</p></cell>
+                    <cell><p>No A are B [cite: 171]</p></cell>
+                </row>
+            </tabular>
+        </table>
+
+        <activity xml:id="act-class-negations">
+            <title>Class Activity: Negate Quantified Statements [cite: 173]</title>
+            <introduction>
+                <p>Complete the following tasks independently and with a classmate:</p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>Write an existential statement. Use specific category names, not just set names like A and B. [cite: 174]</p>
+                </statement>
+                <workspace>1in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>Write a Universal statement. Use specific category names, different from what you used in #1. [cite: 175]</p>
+                </statement>
+                <workspace>1in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>Write down a classmate’s Universal statement. Is your classmate’s statement written correctly? If not, what needs to change? [cite: 176]</p>
+                </statement>
+                <workspace>1.5in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>Negate the quantified statements from #1, #2 and #3. [cite: 177]</p>
+                </statement>
+                <workspace>1.5in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>With a classmate, discuss if your negated statements are correct. Respond to this question with what you found. [cite: 178]</p>
+                </statement>
+                <workspace>1.5in</workspace>
+            </task>
+            <task>
+                <statement>
+                    <p>Write out the rules or diagram which shows how to negate quantified statements. [cite: 179]</p>
+                </statement>
+                <workspace>1.5in</workspace>
+            </task>
+        </activity>
+
+        <exercise xml:id="top-hat-1">
+            <title>Top Hat Question #1: Negating Statements [cite: 141]</title>
+            <statement>
+                <p>Select the negation of "All boys love cars". [cite: 142, 149]</p>
+                <ol marker="A.">
+                    <li><p>Some boys love cars [cite: 143, 150]</p></li>
+                    <li><p>Some boys don't love cars [cite: 144, 151]</p></li>
+                    <li><p>All boys don't love cars [cite: 145, 152]</p></li>
+                    <li><p>No boys don't love cars [cite: 146, 153]</p></li>
+                </ol>
+            </statement>
+        </exercise>
+
+        <exercise xml:id="top-hat-2">
+            <title>Top Hat Question #2: Negating Statements [cite: 181, 194]</title>
+            <statement>
+                <p>Select the negation(s) of "No birds can fly". [cite: 182, 195]</p>
+                <ol marker="A.">
+                    <li><p>Some birds can not fly. [cite: 183, 196]</p></li>
+                    <li><p>Some birds can fly. [cite: 184, 197]</p></li>
+                    <li><p>All birds can fly. [cite: 185, 198]</p></li>
+                    <li><p>Not all birds can fly. [cite: 186, 199]</p></li>
+                    <li><p>No birds can not fly. [cite: 187, 200]</p></li>
+                    <li><p>Some flying things are birds. [cite: 188, 201]</p></li>
+                    <li><p>All birds can not fly. [cite: 189, 202]</p></li>
+                    <li><p>Some things that are not birds can fly. [cite: 190, 203]</p></li>
+                </ol>
+            </statement>
+            <solution>
+                <p>The correct answers are B and F. [cite: 206-209] The negation is "Some birds can fly" (which is identical to "Some birds are flying things"). [cite: 212, 214] This is logically equivalent to "Some flying things are birds". [cite: 215, 222]</p>
+            </solution>
+        </exercise>
+    </subsection>
+</section>

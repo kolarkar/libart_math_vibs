@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-statements_negations_quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <title>Notes on: Statements, Negations, and Quantifiers</title>
+        
+        <introduction>
+            <p>
+                These notes cover the fundamental concepts of statements, negations, and quantified statements as introduced in our material.
+            </p>
+        </introduction>
+    
+        <subsection xml:id="subsec-what-is-a-statement">
+            <title>What is a Statement?</title>
+            <ul>
+                <li>A <term>statement</term> is defined as a <term>declarative sentence that has a truth value</term>. This means the sentence is either true or false, even if we don't know which one it is.</li>
+                <li><term>Examples of Statements:</term>
+                    <ul>
+                        <li>Today is Monday.</li>
+                        <li>The ground is wet.</li>
+                    </ul>
+                </li>
+                <li>In this class, we will consider <term>declarative opinions as statements</term> for the sake of learning, even though the truth values of opinions can be subjective.</li>
+                <li>A sentence that does not have a truth value (like a question or a command) is <term>not a statement</term>.</li>
+            </ul>
+        </subsection>
+        
+        <subsection xml:id="subsec-negating-simple-statements">
+            <title>Negating Simple Statements</title>
+            <ul>
+                <li>In logic, the <term>negation</term> of a statement is <term>another statement which has the opposite truth value</term> from the original statement. If the original statement is true, its negation is false, and vice-versa.</li>
+                <li>Forming negations of simple statements can be straightforward. Often, adding "not" or a phrase like "It's not true that..." works.</li>
+                <li><term>Examples of Negating Simple Statements:</term>
+                    <ul>
+                        <li><term>Statement:</term> Today is Monday.
+                            <ul>
+                                <li><term>Negation:</term> Today is not Monday.</li>
+                                <li><term>Negation:</term> It's not true that today is Monday.</li>
+                            </ul>
+                        </li>
+                        <li><term>Statement:</term> The ground is wet.
+                            <ul>
+                                <li><term>Negation:</term> The ground is not wet.</li>
+                                <li><term>Negation:</term> It's not the case that the ground is wet.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </subsection>
+        
+        <subsection xml:id="subsec-quantified-statements">
+            <title>Quantified Statements (Categorical Statements)</title>
+            <ul>
+                <li>A <term>quantified statement</term>, also known as a categorical statement, is a statement that includes a <term>quantifying word or phrase</term>.</li>
+                <li>Quantified statements are classified as either <term>Universal</term> or <term>Existential</term>.</li>
+            </ul>
+            
+            <subsubsection xml:id="subsubsec-existential-statements">
+                <title>Existential Statements</title>
+                <ul>
+                    <li><term>Existential statements</term> are quantified statements that <term>assert the existence of at least one element</term> in a category.</li>
+                    <li>They typically use the word "Some" or related phrases.</li>
+                    <li>The word <term>"some"</term> in logic means <term>"at least one, possibly more"</term>. It does not imply that there must be more than one.</li>
+                    <li><term>Examples of Existential Statements:</term>
+                        <ul>
+                            <li>"Some A are B."</li>
+                            <li>"Some A aren't B."</li>
+                            <li>Some boys don't love cars.</li>
+                            <li>Some boys love cars.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </subsubsection>
+            
+            <subsubsection xml:id="subsubsec-universal-statements">
+                <title>Universal Statements</title>
+                <ul>
+                    <li><term>Universal statements</term> are quantified statements that <term>affirm or deny a quality about an entire category</term>.</li>
+                    <li>They typically use words like "All" or "No".</li>
+                    <li>"All A are B" is considered a <term>positive universal</term> statement.</li>
+                    <li>"No A are B" is considered a <term>negative universal</term> statement.</li>
+                    <li><term>Examples of Universal Statements:</term>
+                        <ul>
+                            <li>"All A are B"</li>
+                            <li>"No A are B"</li>
+                            <li>All boys love cars.</li>
+                            <li>No boys love cars.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </subsubsection>
+        </subsection>
+        
+        <subsection xml:id="subsec-diagramming-quantified">
+            <title>Diagramming Quantified Statements</title>
+            <p>Venn diagrams can be used to represent quantified statements visually. These diagrams typically involve overlapping circles representing categories.</p>
+            <ul>
+                <li><term>Diagramming Universal Statements:</term>
+                    <ul>
+                        <li><term>All A are B:</term> To diagram this, the region of A that is <em>not</em> part of B is <term>shaded</term>. The shading indicates this region is empty (has no elements).
+                            <p><em>A Venn diagram with two overlapping circles, A and B. The part of circle A that does not overlap with circle B is shaded.</em></p>
+                            <image width="60%">
+                                <shortdescription>A Venn diagram showing All A are B.</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-allAareB">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                        <coordinates bbox="(0,0,10,6)">
+                                            <define-shapes>
+                                                <circle at="A" center="(4,3)" radius="1.5"/>  
+                                                <circle at="B" center="(6,3)" radius="1.5"/>  
+                                            </define-shapes>
+                                            <shape shapes="A,B" operation="difference" fill="gray" stroke="none"/>
+                                            <shape shape="A" stroke="black"/>
+                                            <shape shape="B" stroke="black"/>
+                                            <label anchor="(2.6,3)" alignment="nw"><m>A</m></label>
+                                            <label anchor="(7.4,3)" alignment="ne"><m>B</m></label>
+                                            <label anchor="(5,5.5)">All A are B</label>
+                                        </coordinates>
+                                    </diagram>
+                                </prefigure>
+                            </image>
+                        </li>
+                        <li><term>No A are B:</term> To diagram this, the region where A and B <term>overlap</term> (the football-shaped region) is <term>shaded</term>. The shading indicates this region is empty.
+                            <p><em>A Venn diagram with two overlapping circles, A and B. The overlapping region between A and B is shaded.</em></p>
+                            <image width="60%">
+                                <shortdescription>This is a diagrammatic representation of No A are B. It consists of two overlapping circles.</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-noAareB">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                        <coordinates bbox="(0,0,10,6)">
+                                            <define-shapes>
+                                                <circle at="B" center="(4,3)" radius="1.5"/>  
+                                                <circle at="C" center="(6,3)" radius="1.5"/>  
+                                            </define-shapes>
+                                            <shape shapes="B,C" operation="intersection" fill="gray" stroke="none"/>
+                                            <shape shape="B" stroke="black"/>
+                                            <shape shape="C" stroke="black"/>
+                                            <label anchor="(2.6,3)" alignment="nw"><m>A</m></label>
+                                            <label anchor="(7.4,3)" alignment="ne"><m>B</m></label>
+                                            <label anchor="(5,5.5)">No A are B</label>
+                                        </coordinates>
+                                    </diagram>
+                                </prefigure>
+                            </image>
+                        </li>
+                    </ul>
+                </li>
+                <li><term>Diagramming Existential Statements:</term>
+                    <ul>
+                        <li><term>Some A are B (or Some B are A):</term> This is diagrammed by placing an <term>X in the region where A and B overlap</term>. This indicates that at least one element exists in that specific region.
+                            <p><em>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the overlapping region between A and B.</em></p>
+                            <image width="60%">
+                                <shortdescription>A Venn diagram of "Some A are B".</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-someAareB">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                        <coordinates bbox="(0,0,10,6)">
+                                            <define-shapes>
+                                                <circle at="A" center="(4,3)" radius="1.5"/>  
+                                                <circle at="B" center="(6,3)" radius="1.5"/>  
+                                            </define-shapes>
+                                            <shape shape="A" stroke="black"/>
+                                            <shape shape="B" stroke="black"/>
+                                            <label anchor="(5,3)">X</label>
+                                            <label anchor="(2.6,3)" alignment="nw"><m>A</m></label>
+                                            <label anchor="(7.4,3)" alignment="ne"><m>B</m></label>
+                                            <label anchor="(5,5.5)">Some A are B</label>
+                                        </coordinates>
+                                    </diagram>         
+                                </prefigure>
+                            </image>          
+                        </li>
+                        <li><term>Some A are not B:</term> This is diagrammed by placing an <term>X in the region of A which is not shared with B</term>. This indicates at least one element exists in that specific region.
+                            <p><em>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the part of circle A that does not overlap with circle B.</em></p>
+                            <image width="60%">
+                                <shortdescription>A Venn diagram of some A are not B.</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-someAarenotB">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                        <coordinates bbox="(0,0,10,6)">
+                                            <define-shapes>
+                                                <circle at="B" center="(4,3)" radius="1.5"/>  
+                                                <circle at="C" center="(6,3)" radius="1.5"/>  
+                                            </define-shapes>
+                                            <shape shape="B" stroke="black"/>
+                                            <shape shape="C" stroke="black"/>
+                                            <label anchor="(3.5,3)">X</label>
+                                            <label anchor="(2.6,3)" alignment="nw"><m>A</m></label>
+                                            <label anchor="(7.4,3)" alignment="ne"><m>B</m></label>
+                                            <label anchor="(5,5.5)">Some A are not B</label>
+                                        </coordinates>
+                                    </diagram>         
+                                </prefigure>
+                            </image>          
+                        </li>
+                        <li><term>Some B are not A:</term> This is diagrammed by placing an <term>X in the region of B which is not shared with A</term>. This indicates at least one element exists in that specific region.
+                            <p><em>A Venn diagram with two overlapping circles, A and B. An 'x' is placed in the part of circle B that does not overlap with circle A.</em></p>
+                            <image width="60%">
+                                <shortdescription>A Venn diagram of some B are not A.</shortdescription>
+                                <prefigure xmlns="https://prefigure.org" label="fig-venn-someBarenotA">
+                                    <diagram dimensions="(300,180)" margins="5">
+                                        <coordinates bbox="(0,0,10,6)">
+                                            <define-shapes>
+                                                <circle at="B" center="(4,3)" radius="1.5"/>  
+                                                <circle at="C" center="(6,3)" radius="1.5"/>  
+                                            </define-shapes>
+                                            <shape shape="B" stroke="black"/>
+                                            <shape shape="C" stroke="black"/>
+                                            <label anchor="(6.5,3)">X</label>
+                                            <label anchor="(2.6,3)" alignment="nw"><m>A</m></label>
+                                            <label anchor="(7.4,3)" alignment="ne"><m>B</m></label>
+                                            <label anchor="(5,5.5)">Some B are not A</label>
+                                        </coordinates>
+                                    </diagram>         
+                                </prefigure>
+                            </image>          
+                        </li>
+                    </ul>
+                </li>
+                <li>In both universal and existential diagrams, the <term>unmarked or unshaded regions may or may not have elements</term>.</li>
+            </ul>
+
+            <paragraphs xml:id="para-check-your-understanding">
+                <title>Check Your Understanding</title>
+                <p>
+                    Yes, any text inside a paragraphs block absolutely needs to be wrapped in a <c>&lt;p&gt;</c> tag!
+                </p>
+            </paragraphs>
+ 
+            <exercise xml:id="ex-diagram-missing">
+                <title>A structured exercise</title>
+                <introduction>
+                    <p>
+                        Looking back at the various cases above, is there one that is "missing"? 
+                    </p>
+                </introduction>
+
+                <task xml:id="task-diagram-missing-1">
+                    <statement>
+                        <p>
+                            Please identify the case that is not discussed above and write it down, and then diagram it.
+                        </p>
+                    </statement>
+                    <hint>
+                        <p>
+                            It's one of the <em>universal</em> statements above.
+                        </p>
+                    </hint>
+                    <answer>
+                        <p>
+                            "All B are A." How will you diagram it?
+                        </p>
+                    </answer>
+                    <solution>
+                        <p>
+                            All B are A is not mentioned or diagrammed above. This diagram will be similar to the All A are B, except, this time it will the the circle of B that is outside the intersection that will be shaded, indicating that this region is empty (or has no elements).
+                        </p>
+                    </solution>
+                </task>
+
+                <task xml:id="task-diagram-missing-2">
+                    <statement>
+                        <p>
+                            Think of a situation/example in your life where this (All A are B or the other way around) might be the case. 
+                        </p>
+                    </statement>
+                    <answer>
+                        <p>
+                            No right or wrong answer here - just your personal lived experience!
+                        </p>
+                    </answer>
+                </task>
+
+                <task xml:id="task-diagram-missing-3">
+                    <statement>
+                        <p>
+                            Can you think of another way to diagram "All A are B"? Why do you think we chose this representation?
+                        </p>
+                    </statement>
+                    <answer>
+                        <p>
+                            No right or wrong answer here - just your personal lived experience!
+                        </p>
+                    </answer>
+                </task>
+
+                <conclusion>
+                    <p>
+                        There may be different ways to do a Venn diagram. In this class, we will try to be consistent, especially when there are more-than-one cases possible.
+                    </p>
+                </conclusion>
+            </exercise>
+            
+            <p><term>Examples with Specific Categories:</term></p>
+            <ul>
+                <li>All boys love cars:
+                    <p><em>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The part of circle B that does not overlap with circle C is shaded.</em></p>
+                    <image width="60%">
+                        <shortdescription>A Venn Diagram of all boys love cars.</shortdescription>
+                        <prefigure xmlns="https://prefigure.org" label="fig-venn-allboys">
+                            <diagram dimensions="(300,180)" margins="5">
+                                <coordinates bbox="(0,0,10,6)">
+                                    <define-shapes>
+                                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                                    </define-shapes>
+                                    <shape shapes="B,C" operation="difference" fill="gray" stroke="none"/>
+                                    <shape shape="B" stroke="black"/>
+                                    <shape shape="C" stroke="black"/>
+                                    <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                                    <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                                    <label anchor="(5,5.5)">All boys love cars</label>
+                                    <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                                    <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+                                </coordinates>
+                            </diagram>
+                        </prefigure>
+                    </image>
+                </li>
+                <li>Some boys love cars:
+                    <p><em>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the overlapping region between B and C.</em></p>
+                    <image width="60%">
+                        <shortdescription>A Venn diagram of some boys love cars.</shortdescription>
+                        <prefigure xmlns="https://prefigure.org" label="fig-venn-someboys">
+                            <diagram dimensions="(300,180)" margins="5">
+                                <coordinates bbox="(0,0,10,6)">
+                                    <define-shapes>
+                                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                                    </define-shapes>
+                                    <shape shape="B" stroke="black"/>
+                                    <shape shape="C" stroke="black"/>
+                                    <label anchor="(5,3)">X</label>
+                                    <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                                    <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                                    <label anchor="(5,5.5)">Some boys love cars</label>
+                                    <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                                    <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+                                </coordinates>
+                            </diagram>         
+                        </prefigure>
+                    </image>          
+                </li>
+                <li>No boys love cars:
+                    <p><em>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). The overlapping region between B and C is shaded.</em></p>
+                    <image width="60%">
+                        <shortdescription>A Venn Diagram showing no boys love cars.</shortdescription>
+                        <prefigure xmlns="https://prefigure.org" label="fig-venn-noboys">
+                            <diagram dimensions="(300,180)" margins="5">
+                                <coordinates bbox="(0,0,10,6)">
+                                    <define-shapes>
+                                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                                    </define-shapes>
+                                    <shape shapes="B,C" operation="intersection" fill="gray" stroke="none"/>
+                                    <shape shape="B" stroke="black"/>
+                                    <shape shape="C" stroke="black"/>
+                                    <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                                    <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                                    <label anchor="(5,5.5)">No boys love cars</label>
+                                    <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                                    <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+                                </coordinates>
+                            </diagram>
+                        </prefigure>
+                    </image>
+                </li>
+                <li>Some boys don't love cars:
+                    <p><em>A Venn diagram with two overlapping circles, B (Boys) and C (Carlovers). An 'x' is placed in the part of circle B that does not overlap with circle C.</em></p>
+                    <image width="60%">
+                        <shortdescription>A Venn diagram of some boys don't love cars.</shortdescription>
+                        <prefigure xmlns="https://prefigure.org" label="fig-venn-someboysdont">
+                            <diagram dimensions="(300,180)" margins="5">
+                                <coordinates bbox="(0,0,10,6)">
+                                    <define-shapes>
+                                        <circle at="B" center="(4,3)" radius="1.5"/>  
+                                        <circle at="C" center="(6,3)" radius="1.5"/>  
+                                    </define-shapes>
+                                    <shape shape="B" stroke="black"/>
+                                    <shape shape="C" stroke="black"/>
+                                    <label anchor="(3.5,3)">X</label>
+                                    <label anchor="(2.6,3)" alignment="nw"><m>B</m></label>
+                                    <label anchor="(7.4,3)" alignment="ne"><m>C</m></label>
+                                    <label anchor="(5,5.5)">Some boys don't love cars</label>
+                                    <label anchor="(3.2,0.8)">B <m>\equiv</m> Boys</label>
+                                    <label anchor="(6.8,0.8)">C <m>\equiv</m> Car lovers</label>
+                                </coordinates>
+                            </diagram>         
+                        </prefigure>
+                    </image>          
+                </li>
+            </ul>
+        </subsection>
+        
+        <subsection xml:id="subsec-negating-quantified">
+            <title>Negating Quantified Statements</title>
+            <p>Negating quantified statements involves changing the type of statement (universal to existential and vice-versa) and often changing the quality (affirmative to negative and vice-versa).</p>
+            <ul>
+                <li>The rules for negating basic quantified statements are:
+                    <ul>
+                        <li>The negation of "<term>All A are B</term>" is "<term>Some A are not B</term>".</li>
+                        <p><em>(Visual placeholder: Two Venn diagrams side-by-side. The first diagram shows 'All A are B'. The second diagram shows 'Some A are not B'. A double-headed arrow connects the two diagrams, labeled 'Negation'.)</em></p>
+                        
+                        <li>The negation of "<term>Some A are B</term>" is "<term>No A are B</term>".</li>
+                        <p><em>(Visual placeholder: Two Venn diagrams side-by-side. The first diagram shows 'Some A are B'. The second diagram shows 'No A are B'. A double-headed arrow connects the two diagrams, labeled 'Negation'.)</em></p>
+                    </ul>
+                </li>
+                <li>There is a difference between <term>conversational English</term> and <term>formal logic</term> when negating universal statements.</li>
+                <li>In conversational English, one might negate "All Dogs are Mammals" by saying "All Dogs are not Mammals" or "Not All Dogs are Mammals".</li>
+                <li>However, in <term>symbolic logic</term>, a universal statement must be negated with an <term>existential statement</term>.</li>
+                <li>The negation of "All Dogs are Mammals" is <term>"Some Dogs are not Mammals"</term>. This is because we need to <term>assert the existence of at least one element</term> (a dog) which defies the original "all dogs are mammals" statement. Using the word "Some" achieves this.</li>
+            </ul>
+            
+            <p><term>Examples of Negating Quantified Statements:</term></p>
+            <ul>
+                <li>Negation of "<term>All boys love cars</term>" is "<term>Some boys don't love cars</term>". (Correct option B in Top Hat Question #1)</li>
+                <li>Negation of "<term>No birds can fly</term>" is "<term>Some birds can fly</term>".
+                    <ul>
+                        <li>The source material diagrams this as:
+                            <p><em>(Visual Placeholder: Two Venn diagrams side-by-side. The first shows 'No birds are flying things'. The second shows 'Some birds are flying things'. A double-headed arrow connects them, labeled 'Negation'.)</em></p>
+                        </li>
+                        <li>The source notes that "Some birds are flying things" is logically equivalent to "Some flying things are birds". Both are represented by an X in the overlapping region of Birds (B) and Flying things (F).
+                            <p><em>(Visual Placeholder: Two Venn diagrams side-by-side. The first shows 'Some birds are flying things'. The second shows 'Some flying things are birds'. A double-headed arrow connects them, labeled 'is logically equivalent to'.)</em></p>
+                        </li>
+                        <li>Therefore, both "Some birds can fly" and "Some flying things are birds" are listed as possible negations of "No birds can fly". (Options B and F in Top Hat Question #2).</li>
+                    </ul>
+                </li>
+            </ul>
+        </subsection>
+
+        <exercise xml:id="ex-general-structure">
+            <title>A structured exercise</title>
+            <introduction>
+                <p>
+                    Here is where we give the student the background information
+                    required to start accomplishing tasks.
+                </p>
+            </introduction>
+
+            <task xml:id="task-general-1">
+                <statement>
+                    <p>The first step to do.</p>
+                </statement>
+                <hint>
+                    <p>A little hint.</p>
+                </hint>
+                <answer>
+                    <p>Just the answer.</p>
+                </answer>
+                <solution>
+                    <p>All the glorious details about how to do the first step.</p>
+                </solution>
+            </task>
+
+            <task xml:id="task-general-2">
+                <statement>
+                    <p>
+                        The second step to do.
+                        We'll be lazy and just include an answer.
+                    </p>
+                </statement>
+                <answer>
+                    <p>Just the answer.</p>
+                </answer>
+            </task>
+
+            <conclusion>
+                <p>A little wrap up.</p>
+            </conclusion>
+        </exercise>
+
+        <conclusion>
+            <p>
+                Concluding text. What could be put here? Something like, in the next section, we'll see ... but perhaps not since that next section might change!
+                (Optional.)
+            </p>
+        </conclusion>
+    </section>
